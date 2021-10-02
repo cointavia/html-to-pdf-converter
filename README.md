@@ -64,9 +64,9 @@ then
 
 ```php
 $fileName = "Sample File";
-$HTMLData = "<h1>Hello</h1><p>World</p>";
+$htmlData = "<h1>Hello</h1><p>World</p>";
 
-$pdfFile = CointaviaPDF::generatePDF($fileName,$HTMLData);
+$pdfFile = CointaviaPDF::generatePDF($fileName,$htmlData);
 ```
 
 With successfull request Cointavia Api will return
