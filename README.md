@@ -32,6 +32,12 @@ composer update
 To use the CointaviaPDF Service Provider, you must register the provider when bootstrapping your application.
 
 
+## ⭐Purchase Api Token
+
+You can purchase api token through [pdf.cointavia.com](https://pdf.cointavia.com/)
+
+
+
 ### Configuration
 
 
