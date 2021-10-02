@@ -45,11 +45,40 @@ The settings can be found in the generated `config/cointavia-pdf.php` configurat
 
 ```php
 return [
-    'auth_token' => 'abc123',
-    'user_token' => 'user123'
+    'auth_token' => '**********',
+    'user_token' => '**********'
 ];
 ```
 
+
+### Usage
+You can create a new CointaviaPDF instance and load a HTML string, file or view name. You can save it to a file, or stream (show in browser) or download.
+
+Use the facade in Controller or Service:
+
+```php
+use CointaviaPDF;
+```
+
+then
+
+```php
+$fileName = "Sample File";
+$HTMLData = "<h1>Hello</h1><p>World</p>";
+
+$pdfFile = CointaviaPDF::generatePDF($fileName,$HTMLData);
+```
+
+With successfull request Cointavia Api will return
+
+```json
+{
+    "status": 200,
+    "success": {
+        "filePath": "path-To-Download-PDF"
+    }
+}
+```
 
 ### Disclaimer
 All rights reserved [@cointavia](https://pdf.cointavia.com/)
