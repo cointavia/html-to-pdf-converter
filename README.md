@@ -75,7 +75,7 @@ With successfull request Cointavia Api will return
 {
     "status": 200,
     "success": {
-        "filePath": "path-To-Download-PDF"
+        "filePath": "Path-To-Download-PDF"
     }
 }
 ```
